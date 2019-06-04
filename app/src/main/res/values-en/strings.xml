@@ -16,8 +16,8 @@
     <string name="_0">0</string>
     <string name="equals_sign">=</string>
     <string name="divide_sign">/</string>
-    <string name="errormsg">Слишком уж большое число, каклькулятор на такое не рассчитан</string>
-    <string name="errheader">Осторожно, Внимание!</string>
-    <string name="erroption">Ясно</string>
-    <string name="language">Русский</string>
+    <string name="errormsg">The provided number seems to be way too big</string>
+    <string name="errheader">Warning!</string>
+    <string name="erroption">Cool and good</string>
+    <string name="language">English</string>
 </resources>

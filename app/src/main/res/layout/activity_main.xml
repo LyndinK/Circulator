@@ -1,4 +1,5 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
@@ -7,30 +8,35 @@
     android:orientation="horizontal" >
 
     <TextView
-        android:id ="@+id/value1"
-        android:layout_width="wrap_content"
-        android:background="@drawable/round_textbox" />
+        android:id="@+id/value1"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_textbox"
+        android:gravity="center" />
 
     <TextView
         android:id ="@+id/applied_operation"
-        android:layout_width="wrap_content"
-        android:background="@drawable/round_textbox" />
+        android:layout_width="match_parent"
+        android:background="@drawable/round_textbox"
+        android:gravity="center" />
 
     <TextView
         android:id ="@+id/value2"
-        android:layout_width="wrap_content"
-        android:background="@drawable/round_textbox" />
+        android:layout_width="match_parent"
+        android:background="@drawable/round_textbox"
+        android:gravity="center" />
 
     <TextView
         android:id ="@+id/result"
+        android:text = "@string/_0"
         android:layout_width="wrap_content"
-        android:background="@drawable/round_textbox" />
+        android:background="@drawable/round_textbox"
+        android:gravity="center" />
 
     <Button
         android:id ="@+id/digit1"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="1"
+        android:text="@string/_1"
         android:background="@drawable/round_button"
         />
 
@@ -38,7 +44,7 @@
         android:id ="@+id/digit2"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="2"
+        android:text="@string/_2"
         android:background="@drawable/round_button"
         />
 
@@ -46,7 +52,7 @@
         android:id ="@+id/digit3"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="3"
+        android:text="@string/_3"
         android:background="@drawable/round_button"
         />
 
@@ -54,14 +60,14 @@
         android:id ="@+id/action_plus"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="+"
+        android:text="@string/add_sign"
         android:background="@drawable/round_button"
         />
     <Button
         android:id ="@+id/digit4"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="4"
+        android:text="@string/_4"
         android:background="@drawable/round_button"
         />
 
@@ -69,7 +75,7 @@
         android:id ="@+id/digit5"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="5"
+        android:text="@string/_5"
         android:background="@drawable/round_button"
         />
 
@@ -77,7 +83,7 @@
         android:id ="@+id/digit6"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="6"
+        android:text="@string/_6"
         android:background="@drawable/round_button"
         />
 
@@ -85,14 +91,14 @@
         android:id ="@+id/action_minus"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="-"
+        android:text="@string/substract_sign"
         android:background="@drawable/round_button"
         />
     <Button
         android:id ="@+id/digit7"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="7"
+        android:text="@string/_7"
         android:background="@drawable/round_button"
         />
 
@@ -100,7 +106,7 @@
         android:id ="@+id/digit8"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="8"
+        android:text="@string/_8"
         android:background="@drawable/round_button"
         />
 
@@ -108,7 +114,7 @@
         android:id ="@+id/digit9"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="9"
+        android:text="@string/_9"
         android:background="@drawable/round_button"
         />
 
@@ -116,7 +122,7 @@
         android:id ="@+id/action_multiply"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="*"
+        android:text="@string/multiply_sign"
         android:background="@drawable/round_button"
         />
 
@@ -124,7 +130,7 @@
         android:id ="@+id/action_clear"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="C"
+        android:text="@string/clear_sign"
         android:background="@drawable/round_button"
         />
 
@@ -132,7 +138,7 @@
         android:id ="@+id/digit0"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="0"
+        android:text="@string/_0"
         android:background="@drawable/round_button"
         />
 
@@ -140,7 +146,7 @@
         android:id ="@+id/action_equals"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="="
+        android:text="@string/equals_sign"
         android:background="@drawable/round_button"
         />
 
@@ -148,8 +154,13 @@
         android:id ="@+id/action_divide"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:text="/"
+        android:text="@string/divide_sign"
         android:background="@drawable/round_button"
         />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content" />
 
 </GridLayout>
