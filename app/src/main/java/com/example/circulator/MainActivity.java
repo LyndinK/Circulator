@@ -13,6 +13,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -29,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
             button6, button7, button8, button9, button_clear, button_add,
             button_subtract, button_multiply, button_divide, button_equals;
 
+    /*для локализации*/
     Switch sw;
+    ImageView image;
 
     /*введённые значения*/
     String value1, value2;
@@ -79,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
         /*для смены локали*/
         sw = findViewById(R.id.switch2);
+        image = findViewById(R.id.imageView);
 
         /*устанавливаем обработчики событий для кнопок с цифрами*/
         button1.setOnClickListener(new View.OnClickListener() {
@@ -195,9 +199,11 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
                     ChangeLocale("en");
+                    image.setImageResource(R.drawable.en);
                 }
                 else{
                     ChangeLocale("ru");
+                    image.setImageResource(R.drawable.rus);
                 }
             }
         });
